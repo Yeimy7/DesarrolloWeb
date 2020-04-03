@@ -1,0 +1,144 @@
+/*
+gris: #77878B
+verde gris: #305252
+onyx: #373E40
+wintergreen: #488286
+pale aqua: #B7D5D4
+
+*/
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #305252
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    background: #4ECDC4;
+    background: -webkit-linear-gradient(to right, #556270, #4ECDC4);
+    background: linear-gradient(to right, #556270, #4ECDC4);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color; */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    overflow: scroll;
+}
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #373E40;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph {
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.fa-star, .fa-star-o {
+    color: #ffc400;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th {
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even) {
+    background-color: #B7D5D4;
+}
+
+.title-item {
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #305252;*/
+    font-size: 2em;
+    border-bottom: solid 2px #305252;
+    padding-bottom: 1em;
+}
+
+.main-image {
+    float: left;
+    margin-right: 1em;
+    height: 350px;
+}
+
+.position {
+    background-color: #305252;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+@media(max-width:600px) {
+    .content {
+        padding: 1em;
+    }
+    td {
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1) {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #373E40
+    }
+    th {
+        display: none;
+    }
+}
+
+@media (min-height:550px) {
+    .content {
+        height: 500px;
+    }
+}
