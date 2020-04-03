@@ -1,23 +1,20 @@
-let links = document.querySelectorAll(".close");
-
-links.forEach(function (link) {
-    link.addEventListener("click", function (ev) {
+(function(){
+    const links = document.querySelectorAll(".close");
+  
+    links.forEach(el =>{
+      el.addEventListener("click",function(ev){
+        let container = document.querySelector(".content");
         ev.preventDefault();
-
-        let content = document.querySelector('.content');
-
-        content.classList.remove("fadeInDown");
-        content.classList.remove("animated");
-
-        content.classList.add("fadeOutUp");
-        content.classList.add("animated");
-
-
-        setTimeout(function () {
-            location.href = "/";
-        }, 700);
-
+        container.classList.remove("fadeInDown");
+        container.classList.remove("animated");
+        container.classList.add("fadeOutUp");
+        container.classList.add("animated");
+        setTimeout(()=>{
+          location.href = this.href;
+        },600);
         return false;
-
+      })
     })
-});
+  
+  })();
+  
